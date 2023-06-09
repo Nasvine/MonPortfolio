@@ -38,6 +38,7 @@ class ContactController extends Controller
         ]);
         
         
+        #dd($request->all());
         $tab_contact = array(
             'nom'     =>  $validation['nom'],
             'prenom'  =>  $validation['prenom'],
@@ -54,7 +55,6 @@ class ContactController extends Controller
             'email'   =>  $validation['email'],
             'message' =>  $validation['message'],
         ];
-       # dd($request->all(), $validation, $tab_contact, $tab_mail_contact);
         
         Contact::create($tab_contact);
         Mail::to("nassvine2@gmail.com")->send(new \App\Mail\ContactMail($tab_mail_contact));

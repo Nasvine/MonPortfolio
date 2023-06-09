@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    public function admin(){
+        return view('admin.layouts.admin');
+    }
     public function index(){
 
         $skills = Skill::all();
