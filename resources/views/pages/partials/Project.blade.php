@@ -4,7 +4,6 @@
             <div class="col-lg-6">
                 <h1 class="display-5 mb-0">My Projects</h1>
             </div>
-            /* The code you provided is creating a section with a list of filters for the projects. */
             <div class="col-lg-6 text-lg-end">
                 <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
                     <li class="mx-3 active" data-filter="*">All Projects</li>

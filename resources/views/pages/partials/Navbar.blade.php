@@ -17,8 +17,8 @@
         </a>
         <div class="navbar-nav me-auto py-0">
             <a href="#project" class="nav-item nav-link">Projects</a>
-            {{-- <a href="#team" class="nav-item nav-link">Team</a>
-            <a href="#testimonial" class="nav-item nav-link">Testimonial</a> --}}
+            {{-- <a href="#team" class="nav-item nav-link">Team</a> --}}
+            <a href="#testimonial" class="nav-item nav-link">Blog</a>
             <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
     </div>

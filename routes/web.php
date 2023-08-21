@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeBlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,7 @@ Route::get('/index', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 */
 Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/index_vine', [HomeBlogController::class, 'index'])->name('index_vine');
 
 
 Route::middleware('auth')->group(function () {
